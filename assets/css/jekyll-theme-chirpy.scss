@@ -5,18 +5,10 @@
 
 @import "main";
 
-/* Force light mode only */
-html[data-mode="dark"],
-html:not([data-mode]) {
-  --mode: light;
-}
-
-/* Warm color palette */
-:root {
+/* Override Chirpy colors after main import */
+html, html[data-mode="light"] {
   --body-bg:             #ede8dc;
   --card-bg:             #f2ede3;
-  --sidebar-bg:          #2c1f14;
-  --sidebar-color:       #e8d9c5;
   --text-color:          #3a2e22;
   --heading-color:       #2c1f14;
   --link-color:          #8b5e3c;
@@ -24,39 +16,34 @@ html:not([data-mode]) {
   --border-color:        #d9cfc4;
   --blockquote-border:   #c4a882;
   --code-bg:             #ede8e0;
-
-  /* Typography */
   --font-family-base:    'Niramit', serif;
   --font-family-heading: 'Playfair Display', 'Niramit', serif;
   --font-size-base:      1.05rem;
   --line-height-base:    1.85;
 }
 
-/* Page margin */
-.container,
-#main-wrapper {
-  padding-left: 2rem;
-  padding-right: 2rem;
+/* Force light mode */
+html[data-mode="dark"] {
+  color-scheme: light !important;
 }
 
-.post-content {
-  max-width: 780px;
-  margin: 0 auto;
-  padding: 0 1.5rem;
-}
-
-/* Sidebar */
+/* Sidebar — direct override */
 #sidebar {
-  background-color: var(--sidebar-bg);
-  color: var(--sidebar-color);
+  background-color: #2c1f14 !important;
+  color: #e8d9c5 !important;
 }
 
 #sidebar a {
-  color: #c4a882;
+  color: #c4a882 !important;
 }
 
 #sidebar a:hover {
-  color: #f7f3ee;
+  color: #f7f3ee !important;
+}
+
+/* Body background */
+body {
+  background-color: #ede8dc !important;
 }
 
 /* Headings */
@@ -71,9 +58,11 @@ h1, h2, h3, h4 {
   line-height: var(--line-height-base);
   color: var(--text-color);
   font-size: var(--font-size-base);
+  max-width: 780px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
 }
 
-/* Headings in post slightly larger for Playfair */
 .post-content h1 { font-size: 2rem; }
 .post-content h2 { font-size: 1.6rem; }
 .post-content h3 { font-size: 1.3rem; }
@@ -83,4 +72,10 @@ blockquote {
   border-left: 3px solid var(--blockquote-border);
   color: #6b5744;
   font-style: italic;
+}
+
+/* Page margin */
+#main-wrapper {
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
