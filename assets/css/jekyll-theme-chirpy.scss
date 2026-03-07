@@ -1,23 +1,9 @@
 ---
 ---
 
-/*@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Lora:ital,wght@0,400;0,600;1,400&display=swap');*/
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Niramit:ital,wght@0,400;0,600;1,400&display=swap');
 
 @import "main";
-
-/* Thai: Niramit, English: Playfair Display */
-@font-face {
-  font-family: 'Content';
-  src: local('Niramit');
-  unicode-range: U+0E00-U+0E7F;
-}
-
-@font-face {
-  font-family: 'Content';
-  src: local('Playfair Display');
-  unicode-range: U+0000-U+00FF, U+0100-U+024F;
-}
 
 /* Force light mode only */
 html[data-mode="dark"],
@@ -27,34 +13,23 @@ html:not([data-mode]) {
 
 /* Warm color palette */
 :root {
-  --font-family-base:    'Niramit', 'Playfair Display', serif;
-  --font-family-heading: 'Playfair Display', 'Niramit', serif;
-  --body-bg:          #ede8dc;
-  --card-bg:          #f2ede3;
-  --sidebar-bg:       #2c1f14;
-  --sidebar-color:    #e8d9c5;
-  --text-color:       #3a2e22;
-  --heading-color:    #2c1f14;
-  --link-color:       #8b5e3c;
-  --link-hover:       #5c3d1e;
-  --border-color:     #d9cfc4;
-  --blockquote-border:#c4a882;
-  --code-bg:          #ede8e0;
+  --body-bg:             #ede8dc;
+  --card-bg:             #f2ede3;
+  --sidebar-bg:          #2c1f14;
+  --sidebar-color:       #e8d9c5;
+  --text-color:          #3a2e22;
+  --heading-color:       #2c1f14;
+  --link-color:          #8b5e3c;
+  --link-hover:          #5c3d1e;
+  --border-color:        #d9cfc4;
+  --blockquote-border:   #c4a882;
+  --code-bg:             #ede8e0;
 
   /* Typography */
-  --font-family-base:    'Niramit', 'Playfair Display', serif;
+  --font-family-base:    'Niramit', serif;
   --font-family-heading: 'Playfair Display', 'Niramit', serif;
   --font-size-base:      1.05rem;
   --line-height-base:    1.85;
-}
-
-/* English characters slightly larger */
-:lang(en), p, li, blockquote {
-  font-size-adjust: 0.5;
-}
-
-p:not(:lang(th)) {
-  font-size: calc(var(--font-size-base) + 2pt);
 }
 
 /* Sidebar */
@@ -82,7 +57,13 @@ h1, h2, h3, h4 {
   font-family: var(--font-family-base);
   line-height: var(--line-height-base);
   color: var(--text-color);
+  font-size: var(--font-size-base);
 }
+
+/* Headings in post slightly larger for Playfair */
+.post-content h1 { font-size: 2rem; }
+.post-content h2 { font-size: 1.6rem; }
+.post-content h3 { font-size: 1.3rem; }
 
 /* Blockquote */
 blockquote {
