@@ -3,12 +3,11 @@
 layout: page
 icon: fas fa-info-circle
 order: 4
-title: "About Anutara Tantraporn"
+title: "ABOUT"
 date: 2026-03-08
 categories: [About]
 tags: [About]
 ---
-
 # Anutara Tantraporn
 
 I was born in 1970 — the same year the Unix epoch began. Time zero. The point every digital system on earth counts from. I didn't plan that, obviously, but looking back, it feels about right. My life has moved with that clock — through technology transitions, economic crises, political upheavals. The scenery kept changing. I just got good at reading what was underneath it.
