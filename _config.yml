@@ -23,7 +23,8 @@ description: >- # used by seo meta and the atom feed
 
 # Fill in the protocol & hostname for your site.
 # E.g. 'https://username.github.io', note that it does not end with a '/'.
-url: "https://anutara-ink.github.io"
+# url: "https://anutara-ink.github.io"
+url: "https://anutara.ink"
 
 github:
   username: anutara-ink # change to your GitHub username
@@ -43,6 +44,7 @@ social:
     # Uncomment below to add more social links
     # - https://www.facebook.com/username
     # - https://www.linkedin.com/in/username
+    https://www.facebook.com/lykos.whisperer
 
 # Site Verification Settings
 webmaster_verifications:
@@ -51,7 +53,7 @@ webmaster_verifications:
   alexa: # fill in your Alexa verification code
   yandex: # fill in your Yandex verification code
   baidu: # fill in your Baidu verification code
-  facebook: # fill in your Facebook verification code
+  facebook: 35419158
 
 # ↑ --------------------------
 # The end of `jekyll-seo-tag` settings
