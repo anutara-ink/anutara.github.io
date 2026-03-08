@@ -32,4 +32,4 @@ So in 2009, I started a school. It began as a Thai-curriculum school with an Eng
 
 Everything I've done — the technology, the business, the writing, the school — comes back to that same question. We made the machines smarter. But are we making the people smarter too?
 
-> \u201CIt is not the knowledge you know; it is the way you think.\u201D
+> "It is not the knowledge you know; it is the way you think."
