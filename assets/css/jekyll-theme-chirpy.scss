@@ -121,31 +121,18 @@ blockquote {
   background-color: var(--claude-bg) !important;
 }
 
-/* Center the main content area */
 #core-wrapper {
   padding-left: 2rem !important;
   padding-right: 2rem !important;
 }
 
-/* Center the row content */
-#core-wrapper > .container > .row {
-  justify-content: center !important;
-}
-
-/* Main article column */
-main.col-12 {
-  display: flex !important;
-  flex-direction: column !important;
-  align-items: center !important;
-}
-
-/* Article itself */
-main.col-12 > article {
-  width: 100%;
+/* Center article within its column — don't touch the grid */
+article.px-1 {
   max-width: 780px;
+  margin-left: auto !important;
+  margin-right: auto !important;
 }
 
-/* Tail wrapper (related posts, nav, footer) */
 #tail-wrapper {
   max-width: 780px;
   margin-left: auto !important;
@@ -153,8 +140,6 @@ main.col-12 > article {
 }
 
 .content {
-  max-width: 720px;
-
   .post-content {
     p {
       margin-bottom: 1.35rem;
@@ -209,13 +194,6 @@ article > .content > blockquote {
 /* Breadcrumb */
 #breadcrumb {
   padding-left: 0;
-}
-
-/* Center topbar content */
-#topbar-wrapper {
-  max-width: 780px;
-  margin-left: auto !important;
-  margin-right: auto !important;
 }
 
 @media (max-width: 576px) {
