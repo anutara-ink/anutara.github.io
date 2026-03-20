@@ -6,8 +6,11 @@ tags: [hawk-eyes-model, ant-algorithm, problem-finding, thinking-framework]
 description: "ในยุคที่ AI แก้ปัญหาแทนเราได้ ทักษะที่หายากกว่าคือการหยุดแล้วถามว่า — โจทย์ที่กำลังจะแก้อยู่ ตั้งถูกหรือเปล่า?"
 image: /assets/img/posts/hawk-ant-thinking-framework.png
 ---
-![Hawk–Ant Thinking Framework](/assets/img/posts/hawk-ant-thinking-framework.png)
-_caption ข้างล่าง_
+<img src="/assets/img/posts/hawk-ant-thinking-framework.png" 
+     alt="Hawk–Ant Thinking Framework" 
+     width="100%">
+<em>caption ข้างล่าง</em>
+
 คนส่วนใหญ่คิดว่าความสามารถที่สำคัญที่สุดคือการแก้ปัญหาให้เร็วที่สุด แต่ในโลกที่ AI สามารถทำสิ่งนั้นได้ดีกว่ามนุษย์ทุกวัน ความสามารถที่หายากกว่าคือการหยุดก่อน แล้วถามว่า — โจทย์ที่เรากำลังจะแก้อยู่ เป็นโจทย์ที่ถูกต้องจริงหรือไม่?
 
 AI ทุกวันนี้เก่งมาก มันวิเคราะห์ข้อมูลได้เร็วกว่าคน เชื่อมโยงความคิดได้ซับซ้อน แตกปัญหาใหญ่เป็นปัญหาเล็กได้เอง ตั้งสมมติฐานได้ สำรวจเส้นทางใหม่ๆ ได้ และทำสิ่งเหล่านี้ได้ดีขึ้นเรื่อยๆ
